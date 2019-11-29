@@ -20,11 +20,11 @@ export default PollsRadioButton;
 
 PollsRadioButton.propTypes = {
     value: PropTypes.string.isRequired,
-    status: PropTypes.bool,
+    status: PropTypes.string,
     disabled: PropTypes.bool
 };
 
 PollsRadioButton.defaultProps = {
-    status: false,
+    status: 'unchecked',
     disabled: false
 };
