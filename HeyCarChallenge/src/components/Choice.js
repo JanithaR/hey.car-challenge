@@ -5,9 +5,17 @@ import PropTypes from 'prop-types';
 import Colors from '../resources/colors';
 import Dimensions from '../resources/dimensions';
 
-const Choice = ({ pollsRadioButton, label }) => {
+const getContainerStyle = (highlighted) => {
+    if (highlighted) {
+        return StyleSheet.flatten([styles.container, styles.containerHighlighted]);
+    }
+
+    return styles.container;
+};
+
+const Choice = ({ pollsRadioButton, label, highlighted }) => {
     return (
-        <View style={styles.container}>
+        <View style={getContainerStyle(highlighted)}>
 
             {pollsRadioButton}
 
@@ -19,8 +27,16 @@ const Choice = ({ pollsRadioButton, label }) => {
 
 const styles = StyleSheet.create({
     container: {
+        height: 50,
+        marginTop: 5,
+        marginBottom: 5,
+        borderRadius: 25,
         flexDirection: 'row',
         alignItems: 'center',
+        backgroundColor: Colors.primaryColorLighter,
+    },
+    containerHighlighted: {
+        backgroundColor: Colors.primaryColorLight
     },
     text: {
         color: Colors.normalFontColor,
@@ -31,6 +47,11 @@ const styles = StyleSheet.create({
 Choice.propTypes = {
     pollsRadioButton: PropTypes.element.isRequired,
     label: PropTypes.string.isRequired,
+    highlighted: PropTypes.bool
+};
+
+Choice.defaultProps = {
+    highlighted: false
 };
 
 export default Choice;
