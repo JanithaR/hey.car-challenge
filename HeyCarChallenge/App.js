@@ -27,6 +27,7 @@ import QuestionWithChoices from './src/components/QuestionWithChoices';
 import BadApiError from './src/components/BadApiError';
 import PollLoading from './src/components/PollLoading';
 import PollsButton from './src/atoms/PollsButton';
+import PollCompleted from './src/components/PollCompleted';
 
 class App extends React.Component {
     constructor(props) {
@@ -149,7 +150,7 @@ class App extends React.Component {
         }
 
         if (questions.length > 0 && currentQuestion === questions.length) {
-            return this.renderScreen();
+            return this.renderScreen(<PollCompleted />);
         }
     }
 };
@@ -160,5 +161,5 @@ const styles = StyleSheet.create({
     }
 });
 
-export default App;
-// export default Storybook;
+// export default App;
+export default Storybook;
