@@ -13,13 +13,21 @@ const getContainerStyle = (highlighted) => {
     return styles.container;
 };
 
+const getTextStyle = (highlighted) => {
+    if (highlighted) {
+        return StyleSheet.flatten([styles.text, styles.textHighlighted]);
+    }
+
+    return styles.text;
+};
+
 const Choice = ({ pollsRadioButton, label, highlighted }) => {
     return (
         <View style={getContainerStyle(highlighted)}>
 
             {pollsRadioButton}
 
-            <Text style={styles.text}>{label}</Text>
+            <Text style={getTextStyle(highlighted)}>{label}</Text>
 
         </View>
     );
@@ -42,6 +50,10 @@ const styles = StyleSheet.create({
         color: Colors.normalFontColor,
         fontSize: Dimensions.normalFontSize,
     },
+    textHighlighted: {
+        fontWeight: 'bold',
+        color: Colors.primaryColor
+    }
 });
 
 Choice.propTypes = {
