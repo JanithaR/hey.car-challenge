@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const ApiMethod = Object.freeze({
     GET: 'GET',
     POST: 'POST',
