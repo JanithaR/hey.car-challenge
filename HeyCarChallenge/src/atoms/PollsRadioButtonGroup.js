@@ -1,5 +1,5 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-// eslint-disable-next-line prettier/prettier
 import { RadioButton } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
