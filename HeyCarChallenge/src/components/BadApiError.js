@@ -1,11 +1,22 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
 
-const BadApiError = () => {
+const BadApiError = ({ retryButton }) => {
     return (
-        <Text>Sorry, we could not load the poll</Text>
+        <View>
+
+            <Text>Sorry, we could not load the poll</Text>
+
+            {retryButton}
+
+        </View>
     );
+};
+
+BadApiError.propTypes = {
+    retryButton: PropTypes.element.isRequired
 };
 
 export default BadApiError;
