@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "storybook": "start-storybook -p 7007",
+    "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook -p 7007",
     "prestorybook": "rnstl"
   },
   "dependencies": {
