@@ -14,12 +14,14 @@ const statusOptions = {
     display: 'inline-radio'
 };
 
+const pollsRadioButton = <PollsRadioButton
+    value={text('Value', 'Value')}
+    disabled={boolean('Disabled', false)}
+    status={options('Status', statusValues, statusValues.unchecked, statusOptions)}
+/>
+
 storiesOf('PollsRadioButton', module)
     .addDecorator(withKnobs)
-    .add('default', () => (
-        <PollsRadioButton
-            value={text('Value', 'Value')}
-            disabled={boolean('Disabled', false)}
-            status={options('Status', statusValues, statusValues.unchecked, statusOptions)}
-        />
-    ));
+    .add('default', () => pollsRadioButton);
+
+export default pollsRadioButton;
