@@ -1,17 +1,29 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import { RadioButton } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
 const PollsRadioButtonGroup = ({ choices, onValueChange, value }) => {
     return (
-        <RadioButton.Group onValueChange={onValueChange} value={value}>
+        <View style={styles.containerStyle}>
 
-            {choices}
+            <RadioButton.Group onValueChange={onValueChange} value={value}>
 
-        </RadioButton.Group>
+                {choices}
+
+            </RadioButton.Group>
+
+        </View>
     );
 };
+
+const styles = StyleSheet.create({
+    containerStyle: {
+        paddingTop: 5,
+        paddingBottom: 5
+    }
+});
 
 PollsRadioButtonGroup.propTypes = {
     choices: PropTypes.arrayOf(PropTypes.element).isRequired,
