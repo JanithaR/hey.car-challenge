@@ -5,10 +5,12 @@
 
 function loadStories() {
 	require('../src/atoms/PollsButton.stories');
+	require('../src/atoms/PollsRadioButton.stories');
 }
 
 const stories = [
-	'../src/atoms/PollsButton.stories'
+	'../src/atoms/PollsButton.stories',
+	'../src/atoms/PollsRadioButton.stories'
 ];
 
 module.exports = {
