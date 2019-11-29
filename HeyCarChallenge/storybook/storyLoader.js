@@ -6,11 +6,15 @@
 function loadStories() {
 	require('../src/atoms/PollsButton.stories');
 	require('../src/atoms/PollsRadioButton.stories');
+	require('../src/components/Choice.stories');
+	require('../src/components/Question.stories');
 }
 
 const stories = [
 	'../src/atoms/PollsButton.stories',
-	'../src/atoms/PollsRadioButton.stories'
+	'../src/atoms/PollsRadioButton.stories',
+	'../src/components/Choice.stories',
+	'../src/components/Question.stories'
 ];
 
 module.exports = {
