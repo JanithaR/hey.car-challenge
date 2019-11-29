@@ -89,7 +89,7 @@ class App extends React.Component {
             const value = choice.choice;
             const renderRadioButton = <PollsRadioButton value={value} disabled={currentPollDisabled} />;
 
-            return <Choice pollsRadioButton={renderRadioButton} label={value} />;
+            return <Choice pollsRadioButton={renderRadioButton} label={value} key={choice.choice} />;
         });
 
         const renderedChoicesGroup = (
@@ -161,5 +161,5 @@ const styles = StyleSheet.create({
     }
 });
 
-// export default App;
-export default Storybook;
+export default App;
+// export default Storybook;
