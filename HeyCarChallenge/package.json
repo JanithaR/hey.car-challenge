@@ -31,6 +31,7 @@
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
     "react-dom": "16.9.0",
+    "react-native-storybook-loader": "^1.8.1",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
