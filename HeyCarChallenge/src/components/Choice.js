@@ -2,8 +2,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
-import Colors from '../res/colors';
-import Dimensions from '../res/dimensions';
+import Colors from '../resources/colors';
+import Dimensions from '../resources/dimensions';
 
 const Choice = ({ pollsRadioButton, label }) => {
     return (
