@@ -1,11 +1,11 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
 const QuestionWithChoices = ({ question, choices }) => {
     return (
-        <View>
+        <View style={styles.containerStyle}>
 
             {question}
 
@@ -18,6 +18,13 @@ const QuestionWithChoices = ({ question, choices }) => {
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    containerStyle: {
+        paddingLeft: 20,
+        paddingRight: 20
+    }
+});
 
 QuestionWithChoices.propTypes = {
     question: PropTypes.element.isRequired,
