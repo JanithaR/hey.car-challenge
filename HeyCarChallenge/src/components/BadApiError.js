@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 
 const BadApiError = () => {
     return (
-        <Text>Sorry we could not load the poll</Text>
+        <Text>Sorry, we could not load the poll</Text>
     );
 };
 
