@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 
 const QuestionWithChoices = ({ question, choices }) => {
@@ -9,7 +9,11 @@ const QuestionWithChoices = ({ question, choices }) => {
 
             {question}
 
-            {choices}
+            <ScrollView>
+
+                {choices}
+
+            </ScrollView>
 
         </View>
     );
