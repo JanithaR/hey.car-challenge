@@ -13,4 +13,11 @@ storiesOf('PollsButton', module)
             disabled={boolean('Disabled', false)}
             onPress={action('Button pressed')}
         />
+    ))
+    .add('disabled', () => (
+        <PollsButton
+            title={'This is a button'}
+            disabled={true}
+            onPress={action('Button pressed')}
+        />
     ));
