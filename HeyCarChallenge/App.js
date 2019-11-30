@@ -129,7 +129,7 @@ class App extends React.Component {
 
                 <StatusBar barStyle="light-content" />
 
-                <SafeAreaView>
+                <SafeAreaView style={styles.safeAreaView}>
 
                     <View style={styles.container}>
 
@@ -169,8 +169,11 @@ class App extends React.Component {
 };
 
 const styles = StyleSheet.create({
+    safeAreaView: {
+        flex: 1
+    },
     container: {
-        backgroundColor: 'white'
+        flex: 1
     }
 });
 
