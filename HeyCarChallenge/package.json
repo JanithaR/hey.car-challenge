@@ -60,6 +60,7 @@
           "type": "iPhone 11"
         }
       }
-    }
+    },
+    "test-runner": "jest"
   }
 }
