@@ -98,7 +98,7 @@ class App extends React.Component {
             return (
                 <Choice
                     label={value}
-                    key={choice.choice}
+                    key={choice.url}
                     highlighted={highlighted}
                     pollsRadioButton={renderRadioButton}
                 />
