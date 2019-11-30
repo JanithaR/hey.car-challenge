@@ -28,6 +28,7 @@ import BadApiError from './src/components/BadApiError';
 import PollLoading from './src/components/PollLoading';
 import PollsButton from './src/atoms/PollsButton';
 import PollCompleted from './src/components/PollCompleted';
+import { RadioButtonStatus } from './src/Enums';
 
 class App extends React.Component {
     constructor(props) {
@@ -87,13 +88,22 @@ class App extends React.Component {
 
         const renderedChoices = choices.map(choice => {
             const value = choice.choice;
-            const renderRadioButton = <PollsRadioButton value={value} disabled={currentPollDisabled} />;
 
             let highlighted = false;
+            let status = RadioButtonStatus.UNCHEKCED;
 
             if (value === currentChoice) {
                 highlighted = true;
+                status = RadioButtonStatus.CHECKED;
             }
+
+            const renderRadioButton = (
+                <PollsRadioButton
+                    value={value}
+                    status={status}
+                    disabled={currentPollDisabled}
+                />
+            );
 
             return (
                 <Choice
