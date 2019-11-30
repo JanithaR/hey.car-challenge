@@ -215,6 +215,126 @@ exports[`Storyshots Choice highlighted 1`] = `
 </View>
 `;
 
+exports[`Storyshots Choice highlighted vote count visible 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#e0e8fd",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 50,
+      "marginBottom": 5,
+      "marginTop": 5,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "borderRadius": 18,
+          "padding": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityElementsHidden={true}
+        allowFontScaling={false}
+        importantForAccessibility="no-hide-descendants"
+        pointerEvents="none"
+        style={
+          Array [
+            Object {
+              "color": "#467bf6",
+              "fontSize": 24,
+            },
+            Array [
+              Object {
+                "transform": Array [
+                  Object {
+                    "scaleX": 1,
+                  },
+                ],
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+            ],
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#467bf6",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      This is a choice
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#467bf6",
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "marginRight": 10,
+      }
+    }
+  >
+    0
+  </Text>
+</View>
+`;
+
 exports[`Storyshots Choice not highlighted 1`] = `
 <View
   style={
@@ -319,6 +439,124 @@ exports[`Storyshots Choice not highlighted 1`] = `
       This is a choice
     </Text>
   </View>
+</View>
+`;
+
+exports[`Storyshots Choice not highlighted vote count visible 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#f0f3fe",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 50,
+      "marginBottom": 5,
+      "marginTop": 5,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "borderRadius": 18,
+          "padding": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <Text
+        accessibilityElementsHidden={true}
+        allowFontScaling={false}
+        importantForAccessibility="no-hide-descendants"
+        pointerEvents="none"
+        style={
+          Array [
+            Object {
+              "color": "#467bf6",
+              "fontSize": 24,
+            },
+            Array [
+              Object {
+                "transform": Array [
+                  Object {
+                    "scaleX": 1,
+                  },
+                ],
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+            ],
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#7d859a",
+          "fontSize": 14,
+        }
+      }
+    >
+      This is a choice
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#7d859a",
+        "fontSize": 14,
+        "marginRight": 10,
+      }
+    }
+  >
+    0
+  </Text>
 </View>
 `;
 
