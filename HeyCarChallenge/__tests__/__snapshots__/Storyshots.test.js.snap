@@ -84,16 +84,26 @@ exports[`Storyshots Choice default 1`] = `
       </Text>
     </View>
   </View>
-  <Text
+  <View
     style={
       Object {
-        "color": "#7d859a",
-        "fontSize": 14,
+        "flex": 1,
       }
     }
   >
-    This is a choice
-  </Text>
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#7d859a",
+          "fontSize": 14,
+        }
+      }
+    >
+      This is a choice
+    </Text>
+  </View>
 </View>
 `;
 
@@ -181,17 +191,27 @@ exports[`Storyshots Choice highlighted 1`] = `
       </Text>
     </View>
   </View>
-  <Text
+  <View
     style={
       Object {
-        "color": "#467bf6",
-        "fontSize": 14,
-        "fontWeight": "bold",
+        "flex": 1,
       }
     }
   >
-    This is a choice
-  </Text>
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#467bf6",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      This is a choice
+    </Text>
+  </View>
 </View>
 `;
 
@@ -279,16 +299,26 @@ exports[`Storyshots Choice not highlighted 1`] = `
       </Text>
     </View>
   </View>
-  <Text
+  <View
     style={
       Object {
-        "color": "#7d859a",
-        "fontSize": 14,
+        "flex": 1,
       }
     }
   >
-    This is a choice
-  </Text>
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#7d859a",
+          "fontSize": 14,
+        }
+      }
+    >
+      This is a choice
+    </Text>
+  </View>
 </View>
 `;
 
@@ -407,16 +437,26 @@ exports[`Storyshots Poll default 1`] = `
             </Text>
           </View>
         </View>
-        <Text
+        <View
           style={
             Object {
-              "color": "#7d859a",
-              "fontSize": 14,
+              "flex": 1,
             }
           }
         >
-          Choice 1
-        </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#7d859a",
+                "fontSize": 14,
+              }
+            }
+          >
+            Choice 1
+          </Text>
+        </View>
       </View>
       <View
         style={
@@ -501,16 +541,26 @@ exports[`Storyshots Poll default 1`] = `
             </Text>
           </View>
         </View>
-        <Text
+        <View
           style={
             Object {
-              "color": "#7d859a",
-              "fontSize": 14,
+              "flex": 1,
             }
           }
         >
-          Choice 2
-        </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#7d859a",
+                "fontSize": 14,
+              }
+            }
+          >
+            Choice 2
+          </Text>
+        </View>
       </View>
     </View>
   </RCTScrollView>
@@ -1126,16 +1176,26 @@ exports[`Storyshots PollsRadioButtonGroup default 1`] = `
         </Text>
       </View>
     </View>
-    <Text
+    <View
       style={
         Object {
-          "color": "#7d859a",
-          "fontSize": 14,
+          "flex": 1,
         }
       }
     >
-      Choice 1
-    </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#7d859a",
+            "fontSize": 14,
+          }
+        }
+      >
+        Choice 1
+      </Text>
+    </View>
   </View>
   <View
     style={
@@ -1220,16 +1280,26 @@ exports[`Storyshots PollsRadioButtonGroup default 1`] = `
         </Text>
       </View>
     </View>
-    <Text
+    <View
       style={
         Object {
-          "color": "#7d859a",
-          "fontSize": 14,
+          "flex": 1,
         }
       }
     >
-      Choice 2
-    </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#7d859a",
+            "fontSize": 14,
+          }
+        }
+      >
+        Choice 2
+      </Text>
+    </View>
   </View>
 </View>
 `;
