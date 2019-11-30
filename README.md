@@ -11,10 +11,10 @@ To test UI elements with Storybook,
 2. `npm run storybook`
 3. `npm run start`
 
-To test snapshots
+Unit testing
 1. `npm test`
 
-To test user flow
+End-to-end testing
 1. `detox build`
 2. `detox test` * Make sure you're on MAC and iOS simulator is setup
 
