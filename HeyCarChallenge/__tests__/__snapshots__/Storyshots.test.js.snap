@@ -313,7 +313,7 @@ exports[`Storyshots Poll default 1`] = `
     <Text
       style={
         Object {
-          "color": "#000",
+          "color": "#2c3a5d",
           "fontSize": 20,
           "fontWeight": "bold",
         }
@@ -1192,7 +1192,7 @@ exports[`Storyshots Question default 1`] = `
   <Text
     style={
       Object {
-        "color": "#000",
+        "color": "#2c3a5d",
         "fontSize": 20,
         "fontWeight": "bold",
       }
