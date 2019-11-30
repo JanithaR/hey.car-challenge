@@ -1,0 +1,717 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Choice default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#f0f3fe",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 50,
+      "marginBottom": 5,
+      "marginTop": 5,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "borderRadius": 18,
+          "padding": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <Text
+        accessibilityElementsHidden={true}
+        allowFontScaling={false}
+        importantForAccessibility="no-hide-descendants"
+        pointerEvents="none"
+        style={
+          Array [
+            Object {
+              "color": "#467bf6",
+              "fontSize": 24,
+            },
+            Array [
+              Object {
+                "transform": Array [
+                  Object {
+                    "scaleX": 1,
+                  },
+                ],
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+            ],
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 14,
+      }
+    }
+  >
+    This is a choice
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Poll default 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingLeft": 20,
+      "paddingRight": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 5,
+        "paddingTop": 5,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      This is a question
+    </Text>
+  </View>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#f0f3fe",
+            "borderRadius": 25,
+            "flexDirection": "row",
+            "height": 50,
+            "marginBottom": 5,
+            "marginTop": 5,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityStates={Array []}
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "borderRadius": 18,
+                "padding": 6,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <Text
+              accessibilityElementsHidden={true}
+              allowFontScaling={false}
+              importantForAccessibility="no-hide-descendants"
+              pointerEvents="none"
+              style={
+                Array [
+                  Object {
+                    "color": "#467bf6",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {
+                      "transform": Array [
+                        Object {
+                          "scaleX": 1,
+                        },
+                      ],
+                    },
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Material Design Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 14,
+            }
+          }
+        >
+          Choice 1
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#f0f3fe",
+            "borderRadius": 25,
+            "flexDirection": "row",
+            "height": 50,
+            "marginBottom": 5,
+            "marginTop": 5,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityStates={Array []}
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "borderRadius": 18,
+                "padding": 6,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <Text
+              accessibilityElementsHidden={true}
+              allowFontScaling={false}
+              importantForAccessibility="no-hide-descendants"
+              pointerEvents="none"
+              style={
+                Array [
+                  Object {
+                    "color": "#467bf6",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {
+                      "transform": Array [
+                        Object {
+                          "scaleX": 1,
+                        },
+                      ],
+                    },
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Material Design Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 14,
+            }
+          }
+        >
+          Choice 2
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Storyshots PollsButton default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <Text
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontSize": 18,
+            "padding": 8,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      This is a button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsButton disabled 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    <Text
+      disabled={true}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontSize": 18,
+            "padding": 8,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "#cdcdcd",
+          },
+        ]
+      }
+    >
+      This is a button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsRadioButton default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+        "padding": 6,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <Text
+      accessibilityElementsHidden={true}
+      allowFontScaling={false}
+      importantForAccessibility="no-hide-descendants"
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "color": "#467bf6",
+            "fontSize": 24,
+          },
+          Array [
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": 1,
+                },
+              ],
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ],
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsRadioButtonGroup default 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 5,
+      "paddingTop": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f0f3fe",
+        "borderRadius": 25,
+        "flexDirection": "row",
+        "height": 50,
+        "marginBottom": 5,
+        "marginTop": 5,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 18,
+            "padding": 6,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        <Text
+          accessibilityElementsHidden={true}
+          allowFontScaling={false}
+          importantForAccessibility="no-hide-descendants"
+          pointerEvents="none"
+          style={
+            Array [
+              Object {
+                "color": "#467bf6",
+                "fontSize": 24,
+              },
+              Array [
+                Object {
+                  "transform": Array [
+                    Object {
+                      "scaleX": 1,
+                    },
+                  ],
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+              ],
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#222",
+          "fontSize": 14,
+        }
+      }
+    >
+      Choice 1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f0f3fe",
+        "borderRadius": 25,
+        "flexDirection": "row",
+        "height": 50,
+        "marginBottom": 5,
+        "marginTop": 5,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 18,
+            "padding": 6,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        <Text
+          accessibilityElementsHidden={true}
+          allowFontScaling={false}
+          importantForAccessibility="no-hide-descendants"
+          pointerEvents="none"
+          style={
+            Array [
+              Object {
+                "color": "#467bf6",
+                "fontSize": 24,
+              },
+              Array [
+                Object {
+                  "transform": Array [
+                    Object {
+                      "scaleX": 1,
+                    },
+                  ],
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+              ],
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#222",
+          "fontSize": 14,
+        }
+      }
+    >
+      Choice 2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Question default 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 5,
+      "paddingTop": 5,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 20,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    This is a question
+  </Text>
+</View>
+`;
