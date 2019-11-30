@@ -69,16 +69,20 @@ class App extends React.Component {
     };
 
     onChoiceChange = value => {
-        this.setState(
-            { currentChoice: value, currentPollDisabled: true },
-            () => {
-                setTimeout(() => {
-                    this.setState((currentState) => {
-                        return { currentQuestion: currentState.currentQuestion + 1 }
-                    });
-                }, 500);
-            }
-        );
+        const { currentChoice } = this.state;
+
+        if (!currentChoice) {
+            this.setState(
+                { currentChoice: value, currentPollDisabled: true },
+                () => {
+                    setTimeout(() => {
+                        this.setState((currentState) => {
+                            return { currentQuestion: currentState.currentQuestion + 1 }
+                        });
+                    }, 500);
+                }
+            );
+        }
     };
 
     renderPoll = ({ question, url, choices }) => {
@@ -101,7 +105,6 @@ class App extends React.Component {
                 <PollsRadioButton
                     value={value}
                     status={status}
-                    disabled={currentPollDisabled}
                 />
             );
 
