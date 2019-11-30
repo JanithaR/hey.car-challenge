@@ -531,7 +531,14 @@ exports[`Storyshots PollCompleted default 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    style={
+      Object {
+        "color": "#2c3a5d",
+        "fontSize": 20,
+      }
+    }
+  >
     Congratulations!
   </Text>
 </View>
