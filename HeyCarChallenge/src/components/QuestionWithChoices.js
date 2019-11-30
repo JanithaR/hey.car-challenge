@@ -21,6 +21,7 @@ const QuestionWithChoices = ({ question, choices }) => {
 
 const styles = StyleSheet.create({
     containerStyle: {
+        flex: 1,
         paddingLeft: 20,
         paddingRight: 20
     }
