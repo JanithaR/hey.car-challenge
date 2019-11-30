@@ -517,6 +517,33 @@ exports[`Storyshots Poll default 1`] = `
 </View>
 `;
 
+exports[`Storyshots PollLoading default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#2c3a5d",
+        "fontSize": 20,
+      }
+    }
+  >
+    Loading poll...
+  </Text>
+</View>
+`;
+
 exports[`Storyshots PollsButton default 1`] = `
 <View
   accessibilityRole="button"
