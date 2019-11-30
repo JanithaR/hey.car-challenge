@@ -10,3 +10,6 @@ To test UI elements with Storybook,
 1. In `App.js` comment `export default App;` and uncomment `export default Storybook;`
 2. `npm run storybook`
 3. `npm run start`
+
+Known issues
+Choice radio buttons are not visible when unchecked on iOS. This is due to a bug in react-native-paper.
