@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 
 Poll.propTypes = {
     question: PropTypes.element.isRequired,
-    choices: PropTypes.element.isRequired,
+    choices: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
 
 export default Poll;
