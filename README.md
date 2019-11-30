@@ -15,8 +15,9 @@ Unit testing
 1. `npm test`
 
 End-to-end testing
-1. `detox build`
-2. `detox test` * Make sure you're on MAC and iOS simulator is setup
+1. `npm run start`
+2. `detox build`
+3. `detox test` * Make sure you're on MAC and iOS simulator is setup
 
 Known issues\
 Choice radio buttons are not visible when unchecked on iOS. This is due to a bug in react-native-paper.
