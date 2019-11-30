@@ -14,10 +14,15 @@ To test UI elements with Storybook,
 Unit testing
 1. `npm test`
 
-End-to-end testing
+End-to-end testing (* Make sure you're on MAC and iOS simulator is setup)
 1. `npm run start`
-2. `detox build`
-3. `detox test` * Make sure you're on MAC and iOS simulator is setup
+2. `npm run detox_build`
+3. `npm run detox_test`
+
+End-to-end testing offline (* Make sure you're on MAC and iOS simulator is setup)
+1. `npm run start`
+2. `npm run detox_build_offline`
+3. `npm run detox_test_offline`
 
 Known issues\
 Choice radio buttons are not visible when unchecked on iOS. This is due to a bug in react-native-paper.
