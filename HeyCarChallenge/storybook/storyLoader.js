@@ -9,6 +9,7 @@ function loadStories() {
 	require('../src/atoms/PollsRadioButtonGroup.stories');
 	require('../src/components/Choice.stories');
 	require('../src/components/Poll.stories');
+	require('../src/components/PollCompleted.stories');
 	require('../src/components/PollLoading.stories');
 	require('../src/components/Question.stories');
 }
@@ -19,6 +20,7 @@ const stories = [
 	'../src/atoms/PollsRadioButtonGroup.stories',
 	'../src/components/Choice.stories',
 	'../src/components/Poll.stories',
+	'../src/components/PollCompleted.stories',
 	'../src/components/PollLoading.stories',
 	'../src/components/Question.stories'
 ];
