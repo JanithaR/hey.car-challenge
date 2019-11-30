@@ -9,7 +9,9 @@
     "test": "jest",
     "lint": "eslint .",
     "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook -p 7007",
-    "prestorybook": "rnstl"
+    "prestorybook": "rnstl",
+    "detox_build": "detox build",
+    "detox_test": "detox test"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -54,7 +56,7 @@
     "configurations": {
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/HeyCarChallenge.app",
-        "build": "xcodebuild -project ios/HeyCarChallenge.xcodeproj -scheme example -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "build": "xcodebuild -workspace ios/HeyCarChallenge.xcworkspace -scheme HeyCarChallenge -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "device": {
           "type": "iPhone 11"
