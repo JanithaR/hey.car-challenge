@@ -99,7 +99,7 @@ class App extends React.Component {
 
         const renderedQuestion = <Question text={question} />;
 
-        const renderedChoices = choices.map(choice => {
+        const renderedChoices = choices.map((choice, index) => {
             const url = choice.url;
 
             let highlighted = false;
@@ -119,6 +119,7 @@ class App extends React.Component {
                 <PollsRadioButton
                     value={url}
                     status={status}
+                    testID={`choice-${index}`}
                 />
             );
 
