@@ -38,7 +38,6 @@ class App extends React.Component {
             questions: [],
             currentQuestion: 0,
             currentChoice: '',
-            currentPollDisabled: false,
             badApiError: null
         };
     }
@@ -48,10 +47,10 @@ class App extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const { currentQuestion } = this.state;
+        const { currentChoice } = this.state;
 
-        if (currentQuestion !== prevState.currentQuestion) {
-            this.setState({ currentPollDisabled: false, currentChoice: '' });
+        if (currentChoice !== prevState.currentChoice && currentChoice) {
+            this.setVote(currentChoice);
         }
     }
 
@@ -68,50 +67,58 @@ class App extends React.Component {
         }
     };
 
+    setVote = async (voteUrl) => {
+        try {
+            const response = await Api.makeRequest(`${Config.apiEndpoint}${voteUrl}`);
+
+            if (response) {
+                this.setState((currentState) => {
+                    return {
+                        currentQuestion: currentState.currentQuestion + 1,
+                        currentChoice: ''
+                    }
+                });
+            }
+        } catch (error) {
+            this.setState({ badApiError: error });
+        }
+    };
+
     onChoiceChange = value => {
         const { currentChoice } = this.state;
 
         if (!currentChoice) {
-            this.setState(
-                { currentChoice: value, currentPollDisabled: true },
-                () => {
-                    setTimeout(() => {
-                        this.setState((currentState) => {
-                            return { currentQuestion: currentState.currentQuestion + 1 }
-                        });
-                    }, 500);
-                }
-            );
+            this.setState({ currentChoice: value });
         }
     };
 
-    renderPoll = ({ question, url, choices }) => {
-        const { currentChoice, currentPollDisabled } = this.state;
+    renderPoll = ({ question, choices }) => {
+        const { currentChoice } = this.state;
 
         const renderedQuestion = <Question text={question} />;
 
         const renderedChoices = choices.map(choice => {
-            const value = choice.choice;
+            const url = choice.url;
 
             let highlighted = false;
             let status = RadioButtonStatus.UNCHEKCED;
 
-            if (value === currentChoice) {
+            if (url === currentChoice) {
                 highlighted = true;
                 status = RadioButtonStatus.CHECKED;
             }
 
             const renderRadioButton = (
                 <PollsRadioButton
-                    value={value}
+                    value={url}
                     status={status}
                 />
             );
 
             return (
                 <Choice
-                    label={value}
-                    key={choice.url}
+                    key={url}
+                    label={choice.choice}
                     highlighted={highlighted}
                     pollsRadioButton={renderRadioButton}
                 />
