@@ -27,7 +27,19 @@ const Choice = ({ pollsRadioButton, label, highlighted }) => {
 
             {pollsRadioButton}
 
-            <Text style={getTextStyle(highlighted)}>{label}</Text>
+            <View style={styles.textWrapper}>
+
+                <Text
+                    numberOfLines={1}
+                    ellipsizeMode={'tail'}
+                    style={getTextStyle(highlighted)}
+                >
+
+                    {label}
+
+                </Text>
+
+            </View>
 
         </View>
     );
@@ -55,6 +67,9 @@ const styles = StyleSheet.create({
     textHighlighted: {
         fontWeight: 'bold',
         color: Colors.primaryColor
+    },
+    textWrapper: {
+        flex: 1
     }
 });
 
