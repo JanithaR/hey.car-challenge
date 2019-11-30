@@ -517,6 +517,26 @@ exports[`Storyshots Poll default 1`] = `
 </View>
 `;
 
+exports[`Storyshots PollCompleted default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <Text>
+    Congratulations!
+  </Text>
+</View>
+`;
+
 exports[`Storyshots PollLoading default 1`] = `
 <View
   style={
