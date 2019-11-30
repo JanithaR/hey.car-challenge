@@ -50,7 +50,7 @@ class App extends React.Component {
         const { currentQuestion } = this.state;
 
         if (currentQuestion !== prevState.currentQuestion) {
-            this.setState({ currentPollDisabled: false });
+            this.setState({ currentPollDisabled: false, currentChoice: '' });
         }
     }
 
@@ -89,7 +89,20 @@ class App extends React.Component {
             const value = choice.choice;
             const renderRadioButton = <PollsRadioButton value={value} disabled={currentPollDisabled} />;
 
-            return <Choice pollsRadioButton={renderRadioButton} label={value} key={choice.choice} />;
+            let highlighted = false;
+
+            if (value === currentChoice) {
+                highlighted = true;
+            }
+
+            return (
+                <Choice
+                    label={value}
+                    key={choice.choice}
+                    highlighted={highlighted}
+                    pollsRadioButton={renderRadioButton}
+                />
+            );
         });
 
         const renderedChoicesGroup = (
