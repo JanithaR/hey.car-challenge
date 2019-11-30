@@ -5,10 +5,11 @@ import PropTypes from 'prop-types';
 import Colors from '../resources/colors';
 import { RadioButtonStatus } from '../Enums';
 
-const PollsRadioButton = ({ value, disabled, status }) => {
+const PollsRadioButton = ({ value, disabled, status, testID }) => {
     return (
         <RadioButton
             value={value}
+            testID={testID}
             status={status}
             disabled={disabled}
             color={Colors.primaryColor}
@@ -21,6 +22,7 @@ export default PollsRadioButton;
 
 PollsRadioButton.propTypes = {
     value: PropTypes.string.isRequired,
+    testID: PropTypes.string.isRequired,
     status: PropTypes.string,
     disabled: PropTypes.bool
 };
