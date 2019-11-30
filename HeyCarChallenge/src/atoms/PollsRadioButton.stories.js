@@ -22,4 +22,32 @@ storiesOf('PollsRadioButton', module)
             disabled={boolean('Disabled', false)}
             status={options('Status', statusValues, statusValues.unchecked, statusOptions)}
         />
+    ))
+    .add('unchecked', () => (
+        <PollsRadioButton
+            value={'Value'}
+            disabled={false}
+            status={statusValues.unchecked}
+        />
+    ))
+    .add('checked', () => (
+        <PollsRadioButton
+            value={'Value'}
+            disabled={false}
+            status={statusValues.checked}
+        />
+    ))
+    .add('disabled unchecked', () => (
+        <PollsRadioButton
+            value={'Value'}
+            disabled={true}
+            status={statusValues.unchecked}
+        />
+    ))
+    .add('disabled checked', () => (
+        <PollsRadioButton
+            value={'Value'}
+            disabled={true}
+            status={statusValues.checked}
+        />
     ));
