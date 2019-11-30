@@ -50,7 +50,7 @@ class App extends React.Component {
         const { currentChoice } = this.state;
 
         if (currentChoice !== prevState.currentChoice && currentChoice) {
-            this.setVote(currentChoice);
+            this.castVote(currentChoice);
         }
     }
 
@@ -67,7 +67,7 @@ class App extends React.Component {
         }
     };
 
-    setVote = async (voteUrl) => {
+    castVote = async (voteUrl) => {
         try {
             const response = await Api.makeRequest(`${Config.apiEndpoint}${voteUrl}`);
 
