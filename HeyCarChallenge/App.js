@@ -80,7 +80,7 @@ class App extends React.Component {
         );
     };
 
-    renderQuestionWithChoices = ({ question, url, choices }) => {
+    renderPoll = ({ question, url, choices }) => {
         const { currentChoice, currentPollDisabled } = this.state;
 
         const renderedQuestion = <Question text={question} />;
@@ -113,14 +113,14 @@ class App extends React.Component {
             />
         );
 
-        const renderedQuestionWithChoices = (
+        const renderedPoll = (
             <QuestionWithChoices
                 question={renderedQuestion}
                 choices={renderedChoicesGroup}
             />
         );
 
-        return renderedQuestionWithChoices;
+        return renderedPoll;
     };
 
     renderScreen = (screenContent) => {
@@ -157,9 +157,9 @@ class App extends React.Component {
         }
 
         if (questions.length > 0 && currentQuestion < questions.length) {
-            const renderedQuestionWithChoices = this.renderQuestionWithChoices(questions[currentQuestion]);
+            const renderedPoll = this.renderPoll(questions[currentQuestion]);
 
-            return this.renderScreen(renderedQuestionWithChoices);
+            return this.renderScreen(renderedPoll);
         }
 
         if (questions.length > 0 && currentQuestion === questions.length) {
