@@ -422,7 +422,299 @@ exports[`Storyshots PollsButton disabled 1`] = `
 </View>
 `;
 
+exports[`Storyshots PollsRadioButton checked 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+        "padding": 6,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityElementsHidden={true}
+      allowFontScaling={false}
+      importantForAccessibility="no-hide-descendants"
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "color": "#467bf6",
+            "fontSize": 24,
+          },
+          Array [
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": 1,
+                },
+              ],
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ],
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Storyshots PollsRadioButton default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+        "padding": 6,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <Text
+      accessibilityElementsHidden={true}
+      allowFontScaling={false}
+      importantForAccessibility="no-hide-descendants"
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "color": "#467bf6",
+            "fontSize": 24,
+          },
+          Array [
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": 1,
+                },
+              ],
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ],
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsRadioButton disabled checked 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+        "padding": 6,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityElementsHidden={true}
+      allowFontScaling={false}
+      importantForAccessibility="no-hide-descendants"
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.26)",
+            "fontSize": 24,
+          },
+          Array [
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": 1,
+                },
+              ],
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ],
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsRadioButton disabled unchecked 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityStates={
+    Array [
+      "disabled",
+    ]
+  }
+  accessible={true}
+  focusable={false}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+        "padding": 6,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <Text
+      accessibilityElementsHidden={true}
+      allowFontScaling={false}
+      importantForAccessibility="no-hide-descendants"
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.26)",
+            "fontSize": 24,
+          },
+          Array [
+            Object {
+              "transform": Array [
+                Object {
+                  "scaleX": 1,
+                },
+              ],
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ],
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PollsRadioButton unchecked 1`] = `
 <View
   accessibilityRole="button"
   accessibilityStates={Array []}
