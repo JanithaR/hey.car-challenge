@@ -3,6 +3,7 @@ import React from 'react';
 import { RadioButton } from 'react-native-paper';
 import PropTypes from 'prop-types';
 import Colors from '../resources/colors';
+import { RadioButtonStatus } from '../Enums';
 
 const PollsRadioButton = ({ value, disabled, status }) => {
     return (
@@ -25,6 +26,6 @@ PollsRadioButton.propTypes = {
 };
 
 PollsRadioButton.defaultProps = {
-    status: 'unchecked',
+    status: RadioButtonStatus.UNCHEKCED,
     disabled: false
 };
