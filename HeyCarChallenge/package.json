@@ -41,7 +41,10 @@
     "react-test-renderer": "16.9.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "testPathIgnorePatterns": [
+       "/e2e/"
+    ]
   },
   "config": {
     "react-native-storybook-loader": {
