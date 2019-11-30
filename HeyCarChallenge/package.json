@@ -10,8 +10,10 @@
     "lint": "eslint .",
     "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook -p 7007",
     "prestorybook": "rnstl",
-    "detox_build": "detox build",
-    "detox_test": "detox test"
+    "detox_build": "detox build -c ios.sim.release",
+    "detox_test": "detox test -c ios.sim.release -f polltest.spec",
+    "detox_build_offline": "detox build -c ios.sim.release.offline",
+    "detox_test_offline": "detox test -c ios.sim.release.offline -f polltest.offline.spec"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -57,9 +59,17 @@
   },
   "detox": {
     "configurations": {
-      "ios.sim.debug": {
+      "ios.sim.release": {
         "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/HeyCarChallenge.app",
         "build": "xcodebuild -workspace ios/HeyCarChallenge.xcworkspace -scheme HeyCarChallenge -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11"
+        }
+      },
+      "ios.sim.release.offline": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/HeyCarChallenge.app",
+        "build": "RN_SRC_EXT=offline.js xcodebuild -workspace ios/HeyCarChallenge.xcworkspace -scheme HeyCarChallenge -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "device": {
           "type": "iPhone 11"
