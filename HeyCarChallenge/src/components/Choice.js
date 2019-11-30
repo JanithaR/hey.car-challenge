@@ -21,7 +21,29 @@ const getTextStyle = (highlighted) => {
     return styles.text;
 };
 
-const Choice = ({ pollsRadioButton, label, highlighted }) => {
+const getVoteCountStyle = (highlighted) => {
+    if (highlighted) {
+        return StyleSheet.flatten([styles.voteCount, styles.voteCountHighlighted]);
+    }
+
+    return styles.voteCount;
+};
+
+const renderVoteCount = ({ voteCountVisible, highlighted, voteCount }) => {
+    if (voteCountVisible) {
+        return (
+            <Text style={getVoteCountStyle(highlighted)}>
+
+                {voteCount}
+
+            </Text>
+        );
+    }
+
+    return null;
+};
+
+const Choice = ({ pollsRadioButton, label, highlighted, voteCount, voteCountVisible }) => {
     return (
         <View style={getContainerStyle(highlighted)}>
 
@@ -40,6 +62,8 @@ const Choice = ({ pollsRadioButton, label, highlighted }) => {
                 </Text>
 
             </View>
+
+            {renderVoteCount({ voteCount, voteCountVisible, highlighted })}
 
         </View>
     );
@@ -70,17 +94,31 @@ const styles = StyleSheet.create({
     },
     textWrapper: {
         flex: 1
+    },
+    voteCount: {
+        marginRight: 10,
+        color: Colors.normalFontColor,
+        fontSize: Dimensions.normalFontSize,
+    },
+    voteCountHighlighted: {
+        fontWeight: 'bold',
+        color: Colors.primaryColor,
+        fontSize: Dimensions.normalFontSize + 2
     }
 });
 
 Choice.propTypes = {
     pollsRadioButton: PropTypes.element.isRequired,
     label: PropTypes.string.isRequired,
-    highlighted: PropTypes.bool
+    highlighted: PropTypes.bool,
+    voteCount: PropTypes.number,
+    voteCountVisible: PropTypes.bool,
 };
 
 Choice.defaultProps = {
-    highlighted: false
+    highlighted: false,
+    voteCount: 0,
+    voteCountVisible: false,
 };
 
 export default Choice;
