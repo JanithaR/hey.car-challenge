@@ -4,11 +4,7 @@ import { storiesOf } from '@storybook/react-native';
 import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 import PollsRadioButton from './PollsRadioButton';
 import { optionsKnob as options } from '@storybook/addon-knobs';
-
-const statusValues = {
-    checked: 'checked',
-    unchecked: 'unchecked',
-};
+import { RadioButtonStatus } from '../Enums';
 
 const statusOptions = {
     display: 'inline-radio'
@@ -20,34 +16,34 @@ storiesOf('PollsRadioButton', module)
         <PollsRadioButton
             value={text('Value', 'Value')}
             disabled={boolean('Disabled', false)}
-            status={options('Status', statusValues, statusValues.unchecked, statusOptions)}
+            status={options('Status', RadioButtonStatus, RadioButtonStatus.UNCHEKCED, statusOptions)}
         />
     ))
     .add('unchecked', () => (
         <PollsRadioButton
             value={'Value'}
             disabled={false}
-            status={statusValues.unchecked}
+            status={RadioButtonStatus.UNCHEKCED}
         />
     ))
     .add('checked', () => (
         <PollsRadioButton
             value={'Value'}
             disabled={false}
-            status={statusValues.checked}
+            status={RadioButtonStatus.CHECKED}
         />
     ))
     .add('disabled unchecked', () => (
         <PollsRadioButton
             value={'Value'}
             disabled={true}
-            status={statusValues.unchecked}
+            status={RadioButtonStatus.UNCHEKCED}
         />
     ))
     .add('disabled checked', () => (
         <PollsRadioButton
             value={'Value'}
             disabled={true}
-            status={statusValues.checked}
+            status={RadioButtonStatus.CHECKED}
         />
     ));
