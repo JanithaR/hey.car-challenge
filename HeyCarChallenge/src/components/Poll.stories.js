@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import Choice from './Choice';
 import Question from './Question';
-import QuestionWithChoices from './QuestionWithChoices';
+import Poll from './Poll';
 import PollsRadioButton from '../atoms/PollsRadioButton';
 
 const mockQuestion = <Question text={text('Text', 'This is a question')} />;
@@ -22,10 +22,10 @@ const mockChoices = [
     />
 ];
 
-storiesOf('QuestionWithChoices', module)
+storiesOf('Poll', module)
     .addDecorator(withKnobs)
     .add('default', () => (
-        <QuestionWithChoices
+        <Poll
             question={mockQuestion}
             choices={mockChoices}
         />

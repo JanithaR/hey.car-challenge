@@ -3,7 +3,7 @@ import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
-const QuestionWithChoices = ({ question, choices }) => {
+const Poll = ({ question, choices }) => {
     return (
         <View style={styles.containerStyle}>
 
@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
     }
 });
 
-QuestionWithChoices.propTypes = {
+Poll.propTypes = {
     question: PropTypes.element.isRequired,
     choices: PropTypes.element.isRequired,
 };
 
-export default QuestionWithChoices;
+export default Poll;

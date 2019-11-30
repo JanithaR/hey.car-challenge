@@ -23,7 +23,7 @@ import Question from './src/components/Question';
 import PollsRadioButton from './src/atoms/PollsRadioButton';
 import Choice from './src/components/Choice';
 import PollsRadioButtonGroup from './src/atoms/PollsRadioButtonGroup';
-import QuestionWithChoices from './src/components/QuestionWithChoices';
+import Poll from './src/components/Poll';
 import BadApiError from './src/components/BadApiError';
 import PollLoading from './src/components/PollLoading';
 import PollsButton from './src/atoms/PollsButton';
@@ -114,7 +114,7 @@ class App extends React.Component {
         );
 
         const renderedPoll = (
-            <QuestionWithChoices
+            <Poll
                 question={renderedQuestion}
                 choices={renderedChoicesGroup}
             />
