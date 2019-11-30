@@ -29,6 +29,7 @@ import PollLoading from './src/components/PollLoading';
 import PollsButton from './src/atoms/PollsButton';
 import PollCompleted from './src/components/PollCompleted';
 import { RadioButtonStatus } from './src/Enums';
+import TestIDs from './e2e/TestIDs';
 
 class App extends React.Component {
     constructor(props) {
@@ -60,7 +61,10 @@ class App extends React.Component {
             const questions = await Api.makeRequest(`${Config.apiEndpoint}${root.questions_url}`);
 
             this.setState(currentState => {
-                return { questions: [...currentState.questions, ...questions] };
+                return {
+                    questions: [...currentState.questions, ...questions],
+                    badApiError: null
+                };
             });
         } catch (error) {
             this.setState({ badApiError: error });
@@ -177,7 +181,13 @@ class App extends React.Component {
         const { questions, currentQuestion, badApiError } = this.state;
 
         if (badApiError) {
-            const renderedRetryButton = <PollsButton title="Retry" onPress={this.getQuestions} />;
+            const renderedRetryButton = (
+                <PollsButton
+                    title="Retry"
+                    onPress={this.getQuestions}
+                    testID={TestIDs.RETRY_BUTTON}
+                />
+            );
 
             return this.renderScreen(<BadApiError retryButton={renderedRetryButton} />);
         }
