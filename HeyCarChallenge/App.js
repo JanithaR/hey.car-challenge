@@ -72,12 +72,14 @@ class App extends React.Component {
             const response = await Api.makeRequest(`${Config.apiEndpoint}${voteUrl}`);
 
             if (response) {
-                this.setState((currentState) => {
-                    return {
-                        currentQuestion: currentState.currentQuestion + 1,
-                        currentChoice: ''
-                    }
-                });
+                setTimeout(() => {
+                    this.setState((currentState) => {
+                        return {
+                            currentQuestion: currentState.currentQuestion + 1,
+                            currentChoice: ''
+                        }
+                    });
+                }, 1000); // show poll results for a second
             }
         } catch (error) {
             this.setState({ badApiError: error });
@@ -102,6 +104,11 @@ class App extends React.Component {
 
             let highlighted = false;
             let status = RadioButtonStatus.UNCHEKCED;
+            let voteCountVisible = false;
+
+            if (currentChoice) {
+                voteCountVisible = true;
+            }
 
             if (url === currentChoice) {
                 highlighted = true;
@@ -119,8 +126,10 @@ class App extends React.Component {
                 <Choice
                     key={url}
                     label={choice.choice}
+                    voteCount={choice.votes}
                     highlighted={highlighted}
                     pollsRadioButton={renderRadioButton}
+                    voteCountVisible={voteCountVisible}
                 />
             );
         });
